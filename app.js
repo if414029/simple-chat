@@ -1,13 +1,13 @@
 var express = require('express')
 var app = express()
-
+var PORT = process.env.PORT || 5000
 var server = require('http').createServer(app)
 var io = require('socket.io').listen(server)
 
 var users = []
 
-server.listen(5000, function(){
-    console.log("Server Listening on port 5000")
+server.listen(PORT, function(){
+    console.log("Server Listening on port ", PORT)
 })
 
 app.get('/', function(req, res){
