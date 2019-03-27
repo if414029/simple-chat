@@ -4,4 +4,5 @@
 - npm install
 - npm start
 # Send Private Message
-- /w [name user] [message]
+- If you want send a private message, write this in input text: 
+    - /w [name user] [message]
